@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Persons</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>Persons</h1>
+    </div>
+    <div class="persons">
+        <div class="persons__table">
+            <table id="table">
+                <tr class="persons__table-header">
+                    <th>№</th>
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                </tr>
+            </table>
+            <div class="persons__input">
+                <div class="row">
+                    <div class="persons__input-separator"><label><span class="indInput">Index</span><input id="indInput" type="text"/></label></div>
+                    <div class="persons__input-separator">
+                        <label><span class="firstName">First Name</span><input id="firstName" type="text"/></label>
+                        <label><span class="lastName">Last Name</span> <input id="lastName" type="text"/></label>
+                        <label><span class="age">Age</span><input id="age" type="text"/></label>
+                    </div>
+                </div>
+            </div>
+            <div class="persons__add">
+                <div class="row">
+                    <div class="col-4">
+                        <button id="underIndexAdd" class="persons__add-btn">Add by index</button>
+                    </div>
+                    <div class="col-4">
+                        <button id="startAdd" class="persons__add-btn">Add to start</button>
+                    </div>
+                    <div class="col-4">
+                        <button id="endAdd" class="persons__add-btn">Add to end</button>
+                    </div>
+                </div>
+            </div>
+            <div class="persons__delete">
+                <div class="row">
+                    <div class="col-4">
+                        <button id="byIndexDelete" class="persons__delete-btn">Delete by index</button>
+                    </div>
+                    <div class="col-4">
+                        <button id="startDelete" class="persons__delete-btn">Delete from start</button>
+                    </div>
+                    <div class="col-4">
+                        <button id="endDelete" class="persons__delete-btn">Delete from end</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="persons__sidebar">
+            <div class="persons__data">
+                <button id="saveCSV" class="persons__sidebar-btn">Save CSV</button>
+                <button id="saveYALM" class="persons__sidebar-btn">Save Yaml</button>
+                <button id="saveXML" class="persons__sidebar-btn">Save XML</button>
+                <button id="saveJSON" class="persons__sidebar-btn">Save JSON</button>
+            </div>
+            <div class="persons__data">
+                <button id="sendCSV" class="persons__sidebar-btn">Send to server CSV</button>
+                <button id="sendYaml" class="persons__sidebar-btn">Send to server Yaml</button>
+                <button id="sendXML" class="persons__sidebar-btn">Send to server XML</button>
+                <button id="sendJSON" class="persons__sidebar-btn">Send to server JSON</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="model.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

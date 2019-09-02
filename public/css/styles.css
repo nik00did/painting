@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 3em auto;
+    font-size: 1em;
+    color: #333333;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ECE0F8;
+}
+
+h1 {
+    color: #AC58FA;
+    font-style: italic;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.persons {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#table{
+    min-width: 460px;
+}
+
+.persons__table-header {
+    background-color: #D0A9F5;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+}
+
+.persons__table-body {
+    font-size: 1em;
+    background-color: #eee;
+}
+
+#number {
+    width: 5%;
+}
+
+#id {
+    width: 15%;
+}
+
+td, th {
+    padding: 0.5em;
+}
+
+.col-2 {
+    flex: 1;
+}
+
+.col-4 {
+    flex: 2;
+}
+
+.persons__table {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.row {
+    display: flex;
+    margin: 1em;
+}
+
+.persons__input {
+    width: 35%;
+    margin-top: 2em;
+}
+
+input {
+    width: 120px;
+    font-size: 1em;
+    padding: 0.3em;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+    margin: 1em;
+}
+
+.persons__input-separator {
+    border-right: 2px solid #D0A9F5;
+    display: flex;
+}
+
+.persons__input-separator:last-child {
+    border-right: none;
+}
+
+.persons__sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.persons__data {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1em;
+    justify-content: space-between;
+    height: 15em;
+}
+
+label {
+    width: 150px;
+    line-height: 20px;
+}
+
+.firstName,
+.lastName,
+.age,
+.indInput {
+    padding-left: 20px;
+}
+
+.persons__add,
+.persons__delete {
+    min-width: 460px;
+}
+
+.persons__add-btn,
+.persons__delete-btn,
+.persons__sidebar-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    color: #ffffff;
+    background-color: #BE81F7;
+    font-size: 1em;
+    width: 9.5em;
+    height: 3em;
+}

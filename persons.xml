@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+	<person_0>
+		<id>1567279709259</id>
+		<firstName>Петр</firstName>
+		<lastName>Шарапов</lastName>
+		<age>16y</age>
+	</person_0>
+	<person_1>
+		<id>1567279733653</id>
+		<firstName>Светлана</firstName>
+		<lastName>Гру</lastName>
+		<age>25y</age>
+	</person_1>
+</persons>
